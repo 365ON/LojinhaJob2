@@ -8,6 +8,7 @@ using System.Web;
 
 namespace Lojinha_job2.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class LojinhaDbContext : DbContext
     {
         public LojinhaDbContext() : base("MysqlConnection")
